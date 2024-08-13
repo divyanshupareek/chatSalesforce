@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+  <footer>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DdM000009vHgV',
+				'Chatbot_Test',
+				'https://atrium-2a1-dev-ed.develop.my.site.com/ESWChatbotTest1723466245213',
+				{
+					scrt2URL: 'https://atrium-2a1-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://atrium-2a1-dev-ed.develop.my.site.com/ESWChatbotTest1723466245213/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+  </footer>
+</html>
